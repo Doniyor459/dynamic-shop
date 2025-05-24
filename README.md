@@ -1,4 +1,1 @@
-<!DOCTYPE html>
-<html>
-  <link rel="import" href="First.html">
-</html>
+Dynamic Shop- bu O'zbekistondagi birinchi Amazon bilan shartnoma qilgan online savdo kompaniyasi.
