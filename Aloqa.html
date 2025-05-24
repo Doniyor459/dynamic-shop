@@ -4,27 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aloqa — Dynamic Shop</title>
-  <!-- HEADER -->
-  <header class="bg-white py-4 px-6 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <img src="image.png" alt="Dynamic Shop Logo" class="w-12 h-12 object-contain">
-      <span class="logo-text text-red-600">Dynamic Shop</span>
-    </div>
-    <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
-      <a href="First.html"  button class="hover:text-red-600">Bosh sahifa</button></a>
-      <a href="Mahsulotlar.html" target="_blank" button class="hover:text-red-600">Mahsulotlar</button></a>
-      <a href="Kategoriyalar.html" target="_blank" button class="hover:text-red-600">Kategoriyalar</a>
-      <a href="Biz Haqimizda.html"target="_blank"button class="hover:text-red-600">Biz haqimizda</a>
-      <a href="Aloqa.html" target="_blank" button class="hover:text-red-600">Aloqa</a>
-    </nav>
-  </header>
-
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-
   <!-- Custom Style -->
   <style>
     body {
@@ -34,7 +17,6 @@
       background: linear-gradient(135deg, #1f1c2c, #928dab);
       overflow-x: hidden;
     }
-
     .glass {
       backdrop-filter: blur(12px);
       background: rgba(255, 255, 255, 0.1);
@@ -42,11 +24,9 @@
       border-radius: 1.5rem;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     }
-
     .neon-text {
       text-shadow: 0 0 5px #fff, 0 0 10px #c084fc, 0 0 20px #a855f7;
     }
-
     .bg-animation {
       background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
       background-size: 400% 400%;
@@ -56,13 +36,11 @@
       height: 100%;
       z-index: -1;
     }
-
     @keyframes gradient {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
-
     /* Placeholder qora va biroz opaqueda */
     ::placeholder {
       color: rgba(0, 0, 0, 0.6);
@@ -71,6 +49,21 @@
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
+  <header class="bg-white py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="image.png" alt="Dynamic Shop Logo" class="w-12 h-12 object-contain">
+      <span class="logo-text text-red-600">Dynamic Shop</span>
+    </div>
+    <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
+      <a href="First.html" class="hover:text-red-600">Bosh sahifa</a>
+      <a href="Mahsulotlar.html" target="_blank" class="hover:text-red-600">Mahsulotlar</a>
+      <a href="Kategoriyalar.html" target="_blank" class="hover:text-red-600">Kategoriyalar</a>
+      <a href="Biz Haqimizda.html" target="_blank" class="hover:text-red-600">Biz haqimizda</a>
+      <a href="Aloqa.html" target="_blank" class="hover:text-red-600">Aloqa</a>
+    </nav>
+  </header>
 
   <!-- Animated Background -->
   <div class="bg-animation"></div>
@@ -83,7 +76,6 @@
       <div class="space-y-6 text-black font-bold">
         <h2 class="text-4xl font-extrabold neon-text">Biz bilan bog‘laning</h2>
         <p class="text-lg">Istalgan vaqtda bog‘lanishingiz mumkin. 24/7 xizmatdamiz!</p>
-
         <div class="space-y-4">
           <div class="flex items-center gap-4 p-4 bg-white/10 rounded-xl hover:scale-105 transform transition-all duration-300">
             <span class="text-pink-400 text-xl">📞</span>
