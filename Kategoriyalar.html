@@ -4,17 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Shop</title>
-
-  <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="image.png">
-
-  <!-- Maxsus uslublar -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -39,26 +31,28 @@
       <span class="logo-text text-red-600">Dynamic Shop</span>
     </div>
     <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
-      <a href="First.html"  button class="hover:text-red-600">Bosh sahifa</button></a>
-      <a href="Mahsulotlar.html" target="_blank" button class="hover:text-red-600">Mahsulotlar</button></a>
-      <a href="Kategoriyalar.html" target="_blank" button class="hover:text-red-600">Kategoriyalar</a>
-      <a href="Biz Haqimizda.html"target="_blank"button class="hover:text-red-600">Biz haqimizda</a>
-      <a href="Aloqa.html" target="_blank" button class="hover:text-red-600">Aloqa</a>
+      <a href="First.html" class="hover:text-red-600">Bosh sahifa</a>
+      <a href="Mahsulotlar.html" target="_blank" class="hover:text-red-600">Mahsulotlar</a>
+      <a href="Kategoriyalar.html" target="_blank" class="hover:text-red-600">Kategoriyalar</a>
+      <a href="Biz Haqimizda.html" target="_blank" class="hover:text-red-600">Biz haqimizda</a>
+      <a href="Aloqa.html" target="_blank" class="hover:text-red-600">Aloqa</a>
     </nav>
   </header>
-<h1 style="color: black;text-align: center;font-weight: bold;font-size: 450%;">Kategoriyalar</h1>
-<section class="py-16 px-16 bg-gray-100">
+  <h1 style="color: black; text-align: center; font-weight: bold; font-size: 450%;">Kategoriyalar</h1>
+  <section class="py-16 px-16 bg-gray-100">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <!-- Product 1 -->
-      <div class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition">
+      <!-- Category Card with Form -->
+      <form action="Elektron%20Aksesuarlar.html" method="get" class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center">
         <img src="Elektron Aksesuarlar.png" 
              alt="Elektron Aksesuarlar" 
              class="rounded-xl w-full mb-4">
-        <a href="file:///C:/Users/Donyorbek/Desktop/HTML/Elektron%20Aksesuarlar.html" target="_blank">
-          <button class="mt-4 w-full bg-red-500 text-white py-2 rounded-xl hover:bg-red-600 transition">
-            Savatga qo‘shish
-          </button>
-        </a>
-      </div>
-      <section>
-        </html>
+        <input type="hidden" name="category" value="Elektron Aksesuarlar">
+        <button type="submit" class="mt-4 w-full bg-red-500 text-white py-2 rounded-xl hover:bg-red-600 transition">
+          Savatga qo‘shish
+        </button>
+      </form>
+      <!-- Add more forms for other categories as needed -->
+    </div>
+  </section>
+</body>
+</html>
