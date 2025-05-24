@@ -8,7 +8,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-  <!-- Custom Style -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -41,7 +40,6 @@
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
-    /* Placeholder qora va biroz opaqueda */
     ::placeholder {
       color: rgba(0, 0, 0, 0.6);
       font-weight: 700;
@@ -101,22 +99,23 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <form class="space-y-6 text-black font-bold">
+      <!-- Contact Form (updated) -->
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6 text-black font-bold">
         <div>
           <label class="block mb-2 text-sm font-bold">Ism</label>
-          <input type="text" placeholder="Ism" class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+          <input name="Ism" type="text" placeholder="Ism" required class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"/>
         </div>
         <div>
           <label class="block mb-2 text-sm font-bold">Email</label>
-          <input type="email" placeholder="example@mail.com" class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"/>
+          <input name="Email" type="email" placeholder="example@mail.com" required class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"/>
         </div>
         <div>
           <label class="block mb-2 text-sm font-bold">Xabar</label>
-          <textarea rows="4" placeholder="Xabaringiz..." class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+          <textarea name="Xabar" rows="4" placeholder="Xabaringiz..." required class="w-full px-4 py-3 rounded-lg bg-white/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
         </div>
         <button type="submit" class="w-full py-3 rounded-lg bg-purple-500 hover:bg-purple-700 transition text-white font-semibold shadow-lg">Yuborish</button>
       </form>
+      <!-- End Contact Form -->
     </div>
   </section>
 
